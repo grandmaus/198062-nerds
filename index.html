@@ -1,12 +1,284 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <title>Дизайн-студия НЁРДС</title>
+    </head>
+    <body>
+        
+        <header class="main-header">
+            <div class="container">
+                <div class="logo-header">
+                    <a href="#">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Студия Нёрдс">
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                студия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                клиенты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                магазин
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="basket" href="#">
+                        корзина
+                    </a>
+                </div>
+            </div>
+        </header> <!--end main header-->
+        
+        <main class="container">
+            <div class="wrapper-slider">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                
+                <div class="slider-content">
+                    <div class="slides slide1">
+                        <b class="slide-title">
+                            Долго, дорого, скрупулёзно.
+                        </b>
+                        <p class="slide-info">
+                            Математически выверенный дизайн 
+                            для вашего сайта или мобильного приложения.
+                        </p>
+                        <a class="btn slide-btn" href="#">
+                            узнать больше
+                        </a>
+                    </div>
+                    
+                    <div class="slides slide2">
+                        <b class="slide-title">
+                            Любите ли вы математику,
+                            как любим ее мы?
+                        </b>
+                        <p class="slide-info">
+                            Нашим дизайнерам мы удаляем нейроны, ответственные
+                            за креатив, чтобы дать им возможность все просчитать
+                        </p>
+                        <a class="btn slide-btn" href="#">
+                            узнать больше
+                        </a>
+                    </div>
+                    
+                    <div class="slides slide3">
+                        <b class="slide-title">
+                            Только наркотики,
+                            только хардкор!
+                        </b>
+                        <p class="slide-info">
+                            се дизайнерские решения в нашей компании принимаются 
+                            только под воздействием качественных галлюциногенов
+                        </p>
+                        <a class="btn slide-btn" href="#">
+                            узнать больше
+                        </a>
+                    </div> 
+                </div>
+                
+                <div class="slider-control">
+                    <label for="slide1">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="слайд 1">
+                    </label>
+                    <label for="slide3">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="слайд 2">
+                    </label>
+                    <label for="slide3">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="слайд 3">
+                    </label>
+                </div>
+            </div> <!--end wrapper slider-->
+            
+            <div class="content">
+                <div class="product-wrapper">
+                    <div class="product-block">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Веб-сайты">
+                        </a>
+                        <b>веб-сайты</b>
+                        <p>
+                            Мир никогда не будет прежним
+                            после того как увидит ваш сайт!
+                        </p>
+                        <a class="btn btn-product1" href="#">
+                            заказать
+                        </a>
+                    </div> 
+                    
+                    <div class="product-block">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Приложения">
+                        </a>
+                        <b>приложения</b>
+                        <p>
+                            Покорите топ-10 приложений
+                            в AppStrore и Google Play
+                        </p>
+                        <a class="btn btn-product2" href="#">
+                            заказать
+                        </a>
+                    </div>
+                    
+                    <div class="product-block">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100"  width="150px" height="100px"  alt="Презентации">
+                        </a>
+                        <h1>
+                            презентации
+                        </h1>
+                        <p>
+                            Вы даже не подозреваете, 
+                            насколько вы изумительны!
+                        </p>
+                        <a class="btn btn-product3" href="#">
+                            заказать
+                        </a>
+                    </div>
+                </div> <!--end product wrapper-->
+                
+                <div class="promo-block">
+                    <article class="studio-info-left">
+                        <h1>
+                            Мы — маленькая, но гордая
+                            дизайн-студия из Краснодара. 
+                        </h1>
+                        <p>
+                            Исповедуем принципы минимализма и чистоты. 
+                            Ставим математический расчет выше креатива. 
+                            Работаем не покладая рук, как роботы.
+                        </p>
+                        <h2>
+                            выполняем заказы на разработку:
+                        </h2>
+                        <ul>
+                            <li>
+                                Веб-сайтов любой сложности
+                            </li>
+                            <li>
+                                Мобильных приложений для iOS и Android
+                            </li>
+                            <li>
+                                Слайдшоу и видео для корпоративных презентаций
+                            </li>
+                        </ul>
+                    </article>
+                    
+                    <div class="studio-info-right">
+                        <a class="logo-promo" href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Нёрдс">
+                        </a>
+                        <span class="since">
+                            since 2004
+                        </span>
+                        <h2>
+                            как мы работаем:
+                        </h2>
+                        <ul>
+                            <li>
+                                С самоотдачей 146%
+                            </li>
+                            <li>
+                                Соблюдая строки на 100%
+                            </li>
+                            <li>
+                                По предоплате 50%
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!--end promo block-->
+                
+                <div class="portfolio">
+                    <a href="#">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Glukhanko">
+                    </a>
+                    <a href="#">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="html academy">
+                    </a>
+                    <a href="#">
+                        <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Borodinsky">
+                    </a>
+                </div> <!--end portfolio-->
+                
+                <div class="map">
+                    <div class="map-canvas">
+                        <!--КАРТА-->
+                    </div>
+                    <div class="map-info">
+                        <h2>
+                            nёrds design studio
+                        </h2>
+                        <p>
+                            191186, Санкт-Петербург, 
+                            ул. Б. Конюшенная, д. 19/8
+                            тел. +7 (812) 275-75-75
+                        </p>
+                        <a class="btn contact-btn" href="#">
+                            напишите нам
+                        </a>
+                    </div>
+                </div> <!--end map-->
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="contacts">
+                    <div class="social">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Вконтакте">
+                        </a>
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Instagram">
+                        </a>
+                    </div>
+                    <span class="footer-txt">Давайте дружить, это выгодно!
+                        <span>Скидка 10% для друзей из социальных сетей.</span>
+                    </span>
+                </div>
+            </div>
+        </footer> <!--end main footer-->
+        
+        <div class="write-form">
+            <div class="close-letter">
+                <a href="#">
+                    <img src="http://placehold.it/150x100" width="150px" height="100px" alt="Закрыть">
+                </a>
+            </div>
+            <form action="#" method="post">
+                <label>
+                    Ваше имя:<br>
+                    <input type="text" name="username" id="login" value="представьтесь, пожалуйста">
+                </label>
+                <label>
+                    Ваш e-mail:<br>
+                    <input type="text" name="pass" id="pass" value="для отправки ответа">
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea rows="4" width="100%" name="letter">в свободной форме</textarea>
+                </label>
+                <input type="submit" value="отправить">
+            </form>
+        </div> <!--end wtite form-->
+    </body>
+</html>  
