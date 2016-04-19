@@ -1,0 +1,23 @@
+body {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: black;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: black;
+}
