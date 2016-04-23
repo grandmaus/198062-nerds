@@ -1,9 +1,172 @@
 body {
+    width: 1200px;
+    margin: auto;
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
     font-family: "Roboto", "Arial", sans-serif;
     color: black;
+    outline: red dotted;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+    width: 860px;
+    padding: 0 10px;
+    margin: 0 auto;
+    outline: red dotted 1px;
+}
+
+.main-header {
+    min-height: 130px;
+    outline: black dotted 1px;
+}
+
+.logo-header {
+    width: 140px;
+    height: 56px;
+    float: left;
+    outline: black dotted 1px;
+}
+
+.main-navigation {
+    width: 450px;
+    float: left;
+    outline: black dotted 1px;
+    min-height: 130px;
+}
+
+.user-block {
+    width: 100px;
+    float: right;
+    min-height: 130px;
+    outline: black dotted 1px;
+}
+
+.wrapper-slider {
+    width: 860px;
+    margin: 0 auto;
+    min-height: 305px;
+    outline: black dotted 1px;
+}
+
+.slider-content {
+    width: 380px;
+    height: 250px;
+    float: left;
+    outline: black dotted 1px;
+}
+
+.slider-control {
+    width: 60px;
+    min-height: 20px;
+    margin: 0 auto;
+    margin-top: 230px;
+    outline: black dotted 1px;
+}
+
+.product-wrapper {
+    width: 860px;
+    margin: 0 auto;
+    outline: black dotted 1px;
+}
+
+.product-block {
+    width: 240px;
+    float:left;
+    margin-right: 70px;
+    min-height: 298px;
+    outline: black dotted 1px;
+}
+
+.product-block:last-child {
+    margin-right: 0px;
+    /*float: right*/
+}
+
+.promo-block {
+    width: 860px;
+    margin: 0 auto;
+    outline: black dotted 1px;
+}
+
+.studio-info-left {
+    width: 620px;
+    float: left;
+    min-height: 360px;
+    outline: black dotted 1px;
+}
+
+.studio-info-right {
+    width: 240px;
+    float: right;
+    min-height: 360px;
+    outline: black dotted 1px;
+}
+
+.portfolio {
+    width: 840px;
+    padding: 0 10px;
+    text-align: center;
+    outline: black dotted 1px;
+}
+
+.portfolio a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 112px;
+    outline: black dotted 1px;
+}
+
+.portfolio a:last-child {
+    margin-right: 0px
+}
+
+.main-footer {
+    margin: 0 auto;
+    outline: black dotted 1px;
+}
+
+.map {
+    width: 100%;
+    min-height: 420px;
+    margin: 0 auto;
+    outline: black dotted 1px;
+}
+
+.map-canvas {
+    width: 100%;
+    min-height: 420px;
+    outline: black dotted 1px;
+}
+
+.map-info {
+    float:left;
+    width: 250px;
+    height: 240px;
+    position: absolute;
+    outline: black dotted 1px;
+    margin-top: 87px;
+    margin-left: 160px;
+}
+
+.contacts {
+    width: 860px;
+    outline: black dotted 1px;
+}
+
+.write-form {
+    width: 630px;
+    height: 418px;
+    float: left;
+    margin-left: 50px;
+    outline: black dotted 1px;
+    position: absolute;
 }
 
 h1 {
@@ -17,3 +180,18 @@ h2 {
     line-height: 22px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
