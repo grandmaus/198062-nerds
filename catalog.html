@@ -8,7 +8,7 @@
     <body>
         
         <header class="main-header">
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo-header">
                     <a href="#"><img src="img/logo.png" width="139" height="56" alt="Студия Нёрдс"></a>
                 </div>
@@ -26,23 +26,27 @@
             </div>
         </header> <!--end main header-->
         
-        <main class="container">
+        <main class="container clearfix">
             <div class="page-name">
                 <h1>добро пожаловать в магазин готовых макетов</h1>
             </div>
             
-            <aside class="sidebar">
+            <aside class="sidebar clearfix">
                 <form action="#" method="get">
                     <h2>стоимость:</h2>
-                    <div class="range-controls">
-                        <div class="scale">
-                            <div style="width:80%;" class="bar"></div>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div style="width:80%;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
                         </div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
                     </div>
-                    <label>от<input type="text" name="min-price" value="0"></label>
-                    <label>до<input type="text" name="max-price" value="15000"></label>
+                    <div class="price-controls">
+                        от<input class="min-price" type="text" name="min-price" value="0">
+                        до<input class="max-price" type="text" name="max-price" value="15000">
+                    </div>
 
                     <h2>сетка:</h2>
                     <label><input type="radio" name="grid" value="adapt" checked>Адаптивная</label>
@@ -59,8 +63,8 @@
                 </form>
             </aside> <!--end sidebar-->
             
-            <div class="content">
-                <div class="product-wrapper">
+            <div class="content clearfix">
+                <div class="catalog-wrapper clearfix">
                     <div class="sort">
                         <span>сортировать:</span>
                         <ul>
@@ -78,97 +82,98 @@
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
                             <div class="product-price">
                                 <h1>aviator</h1>
                                 <span>Одностраничный макет с авторским дизайном</span>
                                 <a class="btn buy-button" href="#">8000 р.</a>
                             </div>
+                            <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
+                            
                         </article>
                         
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
                             <div class="product-price">
                                 <h1>sunset</h1>
                                 <span>Интернет-магазин с личным кабинетом</span>
                                 <a class="btn buy-button" href="#">10000 р.</a>
                             </div>
+                            <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
                         </article>
                         
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/forte.jpg" width="240" height="240" alt="forte">
                             <div class="product-price">
                                 <h1>forte</h1>
                                 <span>Отличный макет для личного блога</span>
                                 <a class="btn buy-button" href="#">5000 р.</a>
                             </div>
+                            <img src="img/forte.jpg" width="240" height="240" alt="forte">
                         </article>
                         
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/thai.jpg" width="240" height="240" alt="modern organic thai">
                             <div class="product-price">
                                 <h1>modern organic thai</h1>
                                 <span>Сайт для ресторана быстрого питания</span>
                                 <a class="btn buy-button" href="#">12000 р.</a>
                             </div>
+                            <img src="img/thai.jpg" width="240" height="240" alt="modern organic thai">
                         </article>
                         
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
                             <div class="product-price">
                                 <h1>avenue</h1>
                                 <span>макет для блога о путешествиях</span>
                                 <a class="btn buy-button" href="#">8000 р.</a>
                             </div>
+                            <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
                         </article>
                         
                         <article class="product">
                             <div class="dot-line">
                                 <ul>
-                                    <li><li>
-                                    <li><li>
-                                    <li><li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
                             </div>
-                            <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
                             <div class="product-price">
                                 <h1>dovetail</h1>
                                 <span>Интернет-магазин с галереей товаров</span>
                                 <a class="btn buy-button" href="#">14000 р.</a>
                             </div>
+                            <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
                         </article>
                     </div>
                     <ul class="pagination">
@@ -177,13 +182,14 @@
                         <li><a href="#">3</a></li>
                         <li><a href="#">следующая</a></li>
                     </ul>
-                </div> <!--end product wrapper-->
+                </div> <!--end catalog wrapper-->
                 
-                <div class="map">
-                    <div class="map-canvas">
-                        <!--КАРТА-->
-                    </div>
-                    <div class="map-info">
+            </div>
+        </main>
+        <footer class="main-footer clearfix">
+            <div class="map clearfix">
+                    <div class="map-canvas clearfix">
+                        <div class="map-info">
                         <h2>nёrds design studio</h2>
                         <p>
                             191186, Санкт-Петербург, 
@@ -192,12 +198,11 @@
                         </p>
                         <a class="btn contact-btn" href="#">напишите нам</a>
                     </div>
+                        <!--КАРТА-->
+                    </div>
                 </div> <!--end map-->
-            </div>
-        </main>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="contacts">
+            <div class="container clearfix">
+                <div class="contacts clearfix">
                     <div class="social">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Вконтакте"></a>
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Facebook"></a>
