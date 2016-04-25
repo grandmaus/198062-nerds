@@ -1,5 +1,4 @@
 body {
-    width: 1200px;
     margin: auto;
     font-size: 16px;
     line-height: 22px;
@@ -16,14 +15,13 @@ body {
 }
 
 .container {
-    width: 860px;
+    width: 900px;
     padding: 0 10px;
     margin: 0 auto;
     outline: red dotted 1px;
 }
 
 .main-header {
-    min-height: 130px;
     outline: black dotted 1px;
 }
 
@@ -38,40 +36,39 @@ body {
     width: 450px;
     float: left;
     outline: black dotted 1px;
-    min-height: 130px;
+}
+
+.main-navigation li {
+    display: inline;
 }
 
 .user-block {
     width: 100px;
     float: right;
-    min-height: 130px;
     outline: black dotted 1px;
 }
 
 .wrapper-slider {
-    width: 860px;
+    width: 880px;
     margin: 0 auto;
-    min-height: 305px;
     outline: black dotted 1px;
 }
 
 .slider-content {
     width: 380px;
-    height: 250px;
     float: left;
     outline: black dotted 1px;
 }
 
 .slider-control {
     width: 60px;
-    min-height: 20px;
     margin: 0 auto;
     margin-top: 230px;
     outline: black dotted 1px;
 }
 
 .product-wrapper {
-    width: 860px;
+    width: 880px;
     margin: 0 auto;
     outline: black dotted 1px;
 }
@@ -79,8 +76,7 @@ body {
 .product-block {
     width: 240px;
     float:left;
-    margin-right: 70px;
-    min-height: 298px;
+    margin-right: 80px;
     outline: black dotted 1px;
 }
 
@@ -89,7 +85,7 @@ body {
 }
 
 .promo-block {
-    width: 860px;
+    width: 880px;
     margin: 0 auto;
     outline: black dotted 1px;
 }
@@ -97,20 +93,19 @@ body {
 .studio-info-left {
     width: 620px;
     float: left;
-    min-height: 360px;
     outline: black dotted 1px;
 }
 
 .studio-info-right {
     width: 240px;
     float: right;
-    min-height: 360px;
     outline: black dotted 1px;
 }
 
 .portfolio {
-    width: 840px;
-    padding: 0 10px;
+    width: 880px;
+    margin: 0 auto;
+    font-size: 0px;
     text-align: center;
     outline: black dotted 1px;
 }
@@ -118,7 +113,7 @@ body {
 .portfolio a {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 112px;
+    margin-right: 120px;
     outline: black dotted 1px;
 }
 
@@ -141,23 +136,50 @@ body {
 .map-canvas {
     width: 100%;
     min-height: 420px;
+    position: relative;
     outline: black dotted 1px;
 }
 
 .map-info {
     float:left;
     width: 250px;
-    height: 240px;
     position: absolute;
     outline: black dotted 1px;
-    margin-top: 87px;
-    margin-left: 160px;
+    top: 87px;
+    left: 160px;
 }
 
 .contacts {
-    width: 840px;
+    width: 880px;
     padding: 0 10px;
+    font-size: 0px;
+    text-align: center;
     outline: black dotted 1px;
+}
+
+.social {
+    width: 240px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.social a {
+    margin-right: 25px;
+}
+
+.social a:last-child {
+    margin-right: 0px;
+}
+
+.footer-promo {
+    width: 590px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-promo b {
+    font-size: 36px;
 }
 
 .write-form {
@@ -173,20 +195,15 @@ body {
 
 .page-name {
     width: 720px;
-    min-height: 255px;
     margin: 0 auto;
-    outline: black dotted 1px;
-}
-
-.page-name h1 {
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
+    outline: black dotted 1px;
 }
 
 .sidebar {
     width: 240px;
-    min-height: 750px;
     float:left;
     outline: black dotted 1px;
 }
@@ -259,6 +276,17 @@ body {
     display: block;
 }
 
+.sort span {
+    width: 105px;
+    float: left;
+    margin-right: 20px;
+}
+
+.sort li {
+    display: inline;
+    margin-right: 40px;
+}
+
 .catalog-wrapper {
     width: 560px;
     float: right;
@@ -267,8 +295,8 @@ body {
 
 .product {
     width: 240px;
-    height: 270px;
     float: left;
+    position: relative;
     margin-right: 80px;
     margin-bottom: 80px;
 }
@@ -285,25 +313,29 @@ body {
     border-top-right-radius: 5px;
 }
 
+.dot-line li {
+    display: inline;
+}
+
 .product-price {
     width: 200px;
-    height: 200px;
     background: #ffffff;
     position: absolute;
     float: left;
-    margin: 20px;
+    left: 20px;
+    bottom: 25px;
 }
 
 .pagination {
-    width: 300px;
-    height: 40px;
+    min-width: 300px;
     float: left;
     outline: black dotted 1px;
 }
 
-li {
+.pagination li {
     display: inline;
 }
+
 
 h1 {
     font-size: 36px;
@@ -316,20 +348,3 @@ h2 {
     line-height: 22px;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
