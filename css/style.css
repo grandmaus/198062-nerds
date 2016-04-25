@@ -5,7 +5,6 @@ body {
     font-weight: normal;
     font-family: "Roboto", "Arial", sans-serif;
     color: black;
-    outline: red dotted;
 }
 
 .clearfix::after {
@@ -22,20 +21,21 @@ body {
 }
 
 .main-header {
+    padding-top: 27px;
+    padding-bottom: 34px;
     outline: black dotted 1px;
 }
 
 .logo-header {
-    width: 140px;
+    width: 139px;
     height: 56px;
     float: left;
-    outline: black dotted 1px;
+    margin-left: 10px;
 }
 
 .main-navigation {
     width: 450px;
-    float: left;
-    outline: black dotted 1px;
+    float: left; 
 }
 
 .main-navigation li {
@@ -43,14 +43,16 @@ body {
 }
 
 .user-block {
-    width: 100px;
+    width: 90px;
     float: right;
-    outline: black dotted 1px;
 }
 
 .wrapper-slider {
     width: 880px;
+    min-height: 274px;
+    padding-top: 45px;
     margin: 0 auto;
+    margin-bottom: 80px;
     outline: black dotted 1px;
 }
 
@@ -70,11 +72,12 @@ body {
 .product-wrapper {
     width: 880px;
     margin: 0 auto;
-    outline: black dotted 1px;
+    margin-bottom: 140px;
 }
 
 .product-block {
     width: 240px;
+    min-height: 300px;
     float:left;
     margin-right: 80px;
     outline: black dotted 1px;
@@ -86,7 +89,9 @@ body {
 
 .promo-block {
     width: 880px;
+    min-height: 373px; /*Уберу, когда буду форматировать текст*/
     margin: 0 auto;
+    margin-bottom: 50px;
     outline: black dotted 1px;
 }
 
@@ -102,9 +107,18 @@ body {
     outline: black dotted 1px;
 }
 
+.logo-promo {
+    width: 185px;
+    height: 75px;
+    display: block;
+}
+
 .portfolio {
     width: 880px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin: 0 auto;
+    margin-bottom: 75px;
     font-size: 0px;
     text-align: center;
     outline: black dotted 1px;
@@ -128,14 +142,15 @@ body {
 
 .map {
     width: 100%;
-    min-height: 420px;
+    min-height: 415px;
     margin: 0 auto;
+    margin-bottom: 2px;
     outline: black dotted 1px;
 }
 
 .map-canvas {
     width: 100%;
-    min-height: 420px;
+    min-height: 415px;
     position: relative;
     outline: black dotted 1px;
 }
@@ -145,16 +160,17 @@ body {
     width: 250px;
     position: absolute;
     outline: black dotted 1px;
-    top: 87px;
-    left: 160px;
+    top: 88px;
+    left: 325px;
 }
 
 .contacts {
     width: 880px;
     padding: 0 10px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     font-size: 0px;
     text-align: center;
-    outline: black dotted 1px;
 }
 
 .social {
@@ -186,7 +202,6 @@ body {
     width: 630px;
     height: 418px;
     float: left;
-    margin-left: 50px;
     outline: black dotted 1px;
     position: absolute;
 }
@@ -196,6 +211,10 @@ body {
 .page-name {
     width: 720px;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 98px;
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -204,6 +223,9 @@ body {
 
 .sidebar {
     width: 240px;
+    min-height: 700px; /*Уберу, когда буду форматировать*/
+    padding-left: 10px;
+    padding-top: 20px;
     float:left;
     outline: black dotted 1px;
 }
@@ -216,7 +238,7 @@ body {
 .range-controls {
     position: relative;
     height: 80px;
-    padding: 0 30px;
+    padding: 0 20px;
     margin-bottom: 14px;
     background: #f1f1f1;
     border-radius: 5px;
@@ -247,19 +269,19 @@ body {
 }
 
 .min-toggle{
-    left:30px;
+    left: 20px;
     box-shadow: 0px 1px 4px 0px #ababab;
 }
 
 .max-toggle{
-    left:170px;
+    left:160px;
     box-shadow: 0px 1px 4px 0px #ababab;
 }
 
 .min-price, .max-price{
-    width:55px;
+    width: 60px;
     padding:8px 10px;
-    margin-left:10px;
+    margin-left: 12px;
     margin-bottom: 45px;
     border:none;
     background:#d7dcde;
@@ -269,7 +291,7 @@ body {
 }
 
 .min-price{
-    margin-right:14px;
+    margin-right: 17px;
 }
 
 .sidebar label {
@@ -290,6 +312,9 @@ body {
 .catalog-wrapper {
     width: 560px;
     float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 75px;
     outline: black dotted 1px;
 }
 
@@ -298,7 +323,7 @@ body {
     float: left;
     position: relative;
     margin-right: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .product:nth-child(even) {
@@ -318,12 +343,20 @@ body {
 }
 
 .product-price {
-    width: 200px;
+    width: 140px;
+    min-height: 200px;
     background: #ffffff;
     position: absolute;
     float: left;
+    padding-left: 30px;
+    padding-right: 30px;
     left: 20px;
     bottom: 25px;
+}
+
+.product-price h1 {
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .pagination {
