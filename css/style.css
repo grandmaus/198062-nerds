@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 900px;
+    width: 880px;
     padding: 0 10px;
     margin: 0 auto;
     outline: red dotted 1px;
@@ -30,7 +30,6 @@ body {
     width: 139px;
     height: 56px;
     float: left;
-    margin-left: 10px;
 }
 
 .main-navigation {
@@ -48,7 +47,6 @@ body {
 }
 
 .wrapper-slider {
-    width: 880px;
     min-height: 274px;
     padding-top: 45px;
     margin: 0 auto;
@@ -70,7 +68,7 @@ body {
 }
 
 .product-wrapper {
-    width: 880px;
+    width: px;
     margin: 0 auto;
     margin-bottom: 140px;
 }
@@ -88,10 +86,8 @@ body {
 }
 
 .promo-block {
-    width: 880px;
-    min-height: 373px; /*Уберу, когда буду форматировать текст*/
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 119px;
     outline: black dotted 1px;
 }
 
@@ -102,8 +98,9 @@ body {
 }
 
 .studio-info-right {
-    width: 240px;
+    width: 230px;
     float: right;
+    padding: 0 10px;
     outline: black dotted 1px;
 }
 
@@ -111,15 +108,15 @@ body {
     width: 185px;
     height: 75px;
     display: block;
+    margin-left: 33px;
 }
 
 .portfolio {
-    width: 880px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 44px;
+    padding-bottom: 25px;
     margin: 0 auto;
-    margin-bottom: 75px;
-    font-size: 0px;
+    margin-bottom: 85px;
+    font-size: 0;
     text-align: center;
     outline: black dotted 1px;
 }
@@ -165,17 +162,16 @@ body {
 }
 
 .contacts {
-    width: 880px;
-    padding: 0 10px;
     padding-top: 75px;
     padding-bottom: 75px;
-    font-size: 0px;
+    font-size: 0;
     text-align: center;
 }
 
 .social {
     width: 240px;
     display: inline-block;
+    vertical-align: middle;
     margin-right: 50px;
 }
 
@@ -190,6 +186,7 @@ body {
 .footer-promo {
     width: 590px;
     display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
     text-align: left;
 }
@@ -224,7 +221,6 @@ body {
 .sidebar {
     width: 240px;
     min-height: 700px; /*Уберу, когда буду форматировать*/
-    padding-left: 10px;
     padding-top: 20px;
     float:left;
     outline: black dotted 1px;
@@ -313,7 +309,6 @@ body {
     width: 560px;
     float: right;
     padding-left: 10px;
-    padding-right: 10px;
     margin-bottom: 75px;
     outline: black dotted 1px;
 }
