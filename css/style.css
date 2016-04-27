@@ -67,7 +67,6 @@ body {
 }
 
 .product-wrapper {
-    width: px;
     margin: 0 auto;
     margin-bottom: 140px;
 }
@@ -291,6 +290,11 @@ body {
 
 .sidebar label {
     display: block;
+}
+
+.content {
+    width:570px;
+    float:right;
 }
 
 .sort span {
