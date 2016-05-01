@@ -3,41 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>Дизайн-студия НЁРДС - Каталог</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         
         <header class="main-header">
-            <div class="container clearfix">
-                <div class="logo-header">
-                    <a href="#"><img src="img/logo.png" width="139" height="56" alt="Студия Нёрдс"></a>
+            <div class="container">
+                <div class="top-menu clearfix">
+                    <div class="logo-header">
+                        <a href="#"><img src="img/logo.png" width="139" height="56" alt="Студия Нёрдс"></a>
+                    </div>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a href="#">студия</a></li>
+                            <li><a href="#">клиенты</a></li>
+                            <li><a href="#" class="active">магазин</a></li>
+                            <li><a href="#">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-block">
+                        <a class="basket" href="#">корзина</a>
+                    </div>
                 </div>
-                <nav class="main-navigation">
-                    <ul>
-                        <li><a href="#">студия</a></li>
-                        <li><a href="#">клиенты</a></li>
-                        <li><a href="#">магазин</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="user-block">
-                    <a class="basket" href="#">корзина</a>
-                </div>
+                <h1 class="page-name">
+                    добро пожаловать в магазин готовых макетов
+                </h1>
             </div>
         </header> <!--end main header-->
         
         <main class="container clearfix">
-            <h1 class="page-name">
-                добро пожаловать в магазин готовых макетов
-            </h1>
+            
             <aside class="sidebar">
                 <form action="#" method="get">
                     <h2>стоимость:</h2>
                     <div class="range-filter">
                         <div class="range-controls">
                             <div class="scale">
-                                <div style="width:80%;" class="bar"></div>
+                                <div style="width:75%;" class="bar"></div>
                             </div>
                             <div class="toggle min-toggle"></div>
                             <div class="toggle max-toggle"></div>
@@ -48,132 +52,135 @@
                         до<input class="max-price" type="text" name="max-price" value="15000">
                     </div>
 
-                    <h2>сетка:</h2>
+                    <h2 class="price-choise-caption">сетка:</h2>
                     <label><input type="radio" name="grid" value="adapt" checked>Адаптивная</label>
                     <label><input type="radio" name="grid" value="fix">Фиксированная</label>
                     <label><input type="radio" name="grid" value="rubber">Резиновая</label>                    
 
-                    <h2>особенности</h2>
+                    <h2 class="price-choise-caption">особенности</h2>
                     <label><input type="checkbox" name="slider" value="slider" checked>Слайдер</label>
                     <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
                     <label><input type="checkbox" name="news" value="news" checked>Новости</label>
                     <label><input type="checkbox" name="gallery" value="gallery">Галлерея</label>
                     <label><input type="checkbox" name="basket" value="basket">Корзина</label>
-                    <input type="submit" value="показать">
+                    <input class="btn price-choise-btn" type="submit" value="показать">
                 </form>
             </aside> <!--end sidebar-->
             
-            <div class="content clearfix">
                 <div class="catalog-wrapper clearfix">
-                    <div class="sort">
+                    <div class="sort clearfix">
                         <span>сортировать:</span>
                         <ul>
                             <li><a href="#">по цене</a></li>
                             <li><a href="#">по типу</a></li>
                             <li><a href="#">по функционалу</a></li>
+                            <li class="icon-direction icon-down-dir"><a  href="#"></a></li>
+                            <li class="icon-direction icon-up-dir"><a href="#"></a></li>
+                            <li></li>
                         </ul>
+<!--
                         <div class="direction-choice">
-                            <a class="up" href="#"></a>
-                            <a class="down" href="#"></a>
+                            <a class="icon-up-dir" href="#"></a>
+                            <a class="icon-down-dir" href="#"></a>
                         </div>
+-->
                     </div> <!--end sort-->
                     
                     <div class="catalog clearfix">
                         <article class="product clearfix">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>aviator</h1>
+                                <a href="#"><h1>aviator</h1></a>
                                 <span>Одностраничный макет с авторским дизайном</span>
                                 <a class="btn buy-button" href="#">8000 р.</a>
                             </div>
-                            <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
-                            
+                            <div style="background-color:#372314; height:240px; width:240px">
+                                <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
+                            </div>
                         </article>
                         
                         <article class="product">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>sunset</h1>
+                                <a href="#"><h1>sunset</h1></a>
                                 <span>Интернет-магазин с личным кабинетом</span>
                                 <a class="btn buy-button" href="#">10000 р.</a>
                             </div>
-                            <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+                            <div style="background-color:#ebca98; height:240px; width:240px">
+                                <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+                            </div>
                         </article>
                         
                         <article class="product">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>forte</h1>
+                                <a href="#"><h1>forte</h1></a>
                                 <span>Отличный макет для личного блога</span>
                                 <a class="btn buy-button" href="#">5000 р.</a>
                             </div>
-                            <img src="img/forte.jpg" width="240" height="240" alt="forte">
+                            <div style="background-color:#cce1e3; height:240px; width:240px">
+                                <img src="img/forte.jpg" width="240" height="240" alt="forte">
+                            </div>
                         </article>
                         
                         <article class="product">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>modern organic thai</h1>
+                                <a href="#"><h1>modern organic thai</h1></a>
                                 <span>Сайт для ресторана быстрого питания</span>
                                 <a class="btn buy-button" href="#">12000 р.</a>
                             </div>
-                            <img src="img/thai.jpg" width="240" height="240" alt="modern organic thai">
+                            <div style="background-color:#965036; height:240px; width:240px">
+                                <img src="img/thai.jpg" width="240" height="240" alt="modern organic thai">
+                            </div>
                         </article>
                         
                         <article class="product">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>avenue</h1>
-                                <span>макет для блога о путешествиях</span>
+                                <a href="#"><h1>avenue</h1></a>
+                                <span>Макет для блога о путешествиях</span>
                                 <a class="btn buy-button" href="#">8000 р.</a>
                             </div>
-                            <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
+                            <div style="background-color:#eff0eb; height:240px; width:240px">
+                                <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
+                            </div>
                         </article>
                         
                         <article class="product">
-                            <div class="dot-line">
                                 <ul>
                                     <li></li>
                                     <li></li>
                                     <li></li>
                                 </ul>
-                            </div>
                             <div class="product-price">
-                                <h1>dovetail</h1>
+                                <a href="#"><h1>dovetail</h1></a>
                                 <span>Интернет-магазин с галереей товаров</span>
                                 <a class="btn buy-button" href="#">14000 р.</a>
                             </div>
+                            <div style="background-color:#e5b79d; height:240px; width:240px">
                             <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
+                            </div>
                         </article>
                     </div>
                     <ul class="pagination">
@@ -183,30 +190,58 @@
                         <li><a href="#">следующая</a></li>
                     </ul>
                 </div> <!--end catalog wrapper-->
-                
-            </div>
+            
         </main>
         <footer class="main-footer">
             <div class="map">
                     <div class="map-canvas clearfix">
                         <div class="map-info">
-                        <h2>nёrds design studio</h2>
-                        <p>
-                            191186, Санкт-Петербург, 
-                            ул. Б. Конюшенная, д. 19/8
-                            тел. +7 (812) 275-75-75
-                        </p>
-                        <a class="btn contact-btn" href="#">напишите нам</a>
-                    </div>
-                        <!--КАРТА-->
+                            <h2>nёrds design studio</h2>
+                            <p>
+                                191186, Санкт-Петербург, 
+                                ул. Б. Конюшенная, д. 19/8
+                                тел. +7 (812) 275-75-75
+                            </p>
+                            <a class="btn contact-btn" href="#">напишите нам</a>
+                        </div>
+                        <div class="write-form">
+                            <button type="button" class="close-form-button">
+                                <div class="close-btn-icon">
+                                    <div class="close-btn-line-1">
+                                        <div class="close-btn-line-2"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <form action="#" method="post"> 
+                                <div class="input-field-wrapper login-wrapper">
+                                    <label>
+                                        Ваше имя:
+                                        <input class="input-field" type="text" name="username" id="login" value="представьтесь, пожалуйста">
+                                    </label>
+                                </div>
+                                <div class="input-field-wrapper email-wrapper">
+                                    <label>
+                                        Ваш e-mail:
+                                        <input class="input-field" type="text" name="email" id="email" value="для отправки ответа">
+                                    </label>
+                                </div>    
+                                <label>
+                                    Текст письма:
+                                    <textarea class="letter-textarea" rows="5" cols="76"  name="letter">в свободной форме</textarea>
+                                </label>
+                                <input type="submit" value="отправить" class="btn-form">
+                            </form>
+                        </div> <!--end wtite form-->
+                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1188.3582904709765!2d30.323538052423462!3d59.93923638901068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1462063006525" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div> <!--end map-->
             <div class="container">
                 <div class="contacts ">
                     <div class="social">
-                        <a href="#"><img src="#" width="60" height="60" alt="Вконтакте"></a>
-                        <a href="#"><img src="#" width="60" height="60" alt="Facebook"></a>
-                        <a href="#"><img src="#" width="60" height="60" alt="Instagram"></a>
+                        <a class="social-btn icon-vk" href="#"></a>
+                        <a class="social-btn icon-facebook" href="#"></a>
+                        <a class="social-btn icon-instagramm" href="#"></a>
                     </div>
                     <div class="footer-promo">
                         <b>Давайте дружить, это выгодно!</b>
@@ -216,23 +251,6 @@
             </div>
         </footer> <!--end main footer-->
         
-        <div class="write-form">
-            <button type="button"><img src="img/close_btn.png" width="41" height="41" alt="close"></button>
-            <form action="#" method="post"> 
-                <label>
-                    Ваше имя:
-                    <input type="text" name="username" id="login" value="представьтесь, пожалуйста">
-                </label>
-                <label>
-                    Ваш e-mail:
-                    <input type="text" name="pass" id="pass" value="для отправки ответа">
-                </label>
-                <label>
-                    Текст письма:
-                    <textarea rows="4"  name="letter">в свободной форме</textarea>
-                </label>
-                <input type="submit" value="отправить">
-            </form>
-        </div> <!--end wtite form-->
+       
     </body>
 </html>  

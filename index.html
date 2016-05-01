@@ -3,88 +3,95 @@
     <head>
         <meta charset="utf-8">
         <title>Дизайн-студия НЁРДС</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         
         <header class="main-header">
-            <div class="container clearfix">
-                <div class="logo-header">
-                    <a href="#"><img src="img/logo.png" width="139" height="56" alt="Студия Нёрдс"></a>
+            <div class="container">
+                <div class="top-menu clearfix">
+                    <div class="logo-header">
+                        <a href="#"><img src="img/logo.png" width="139" height="56" alt="Студия Нёрдс"></a>
+                    </div>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a href="#" class="active">студия</a></li>
+                            <li><a href="#">клиенты</a></li>
+                            <li><a href="#">магазин</a></li>
+                            <li><a href="#">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-block">
+                        <a  href="#" class="basket"><span class="icon-basket"></span> корзина</a>
+                    </div>
                 </div>
-                <nav class="main-navigation">
-                    <ul>
-                        <li><a href="#">студия</a></li>
-                        <li><a href="#">клиенты</a></li>
-                        <li><a href="catalog.html">магазин</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="user-block">
-                    <a class="basket" href="#">корзина</a>
-                </div>
+                <div class="wrapper-slider ">
+                
+                    <div class="slider-content clearfix">
+                        <div class="bg-slide-3"></div>
+<!--
+                        <div class="slides slide-1">
+                            <b class="slide-title">Долго, дорого, скрупулёзно.</b>
+                            <p class="slide-info">
+                                Математически выверенный дизайн 
+                                для вашего сайта или мобильного приложения.
+                            </p>
+                            <a class="btn slide-btn" href="#">узнать больше</a>
+                        </div>
+                        
+                        <div class="slides slide-2">
+                            <b class="slide-title">Любите ли вы математику,как любим ее мы?</b>
+                            <p class="slide-info">
+                                Нашим дизайнерам мы удаляем нейроны, ответственные
+                                за креатив, чтобы дать им возможность все просчитать
+                            </p>
+                            <a class="btn slide-btn" href="#">узнать больше</a>
+                        </div>
+-->
+
+                        <div class="slides slide-3">
+                            <b class="slide-title slide-title-3">Только наркотики, только хардкор!</b>
+                            <p class="slide-info">
+                                Все дизайнерские решения в нашей компании принимаются 
+                                только под воздействием качественных галлюциногенов
+                            </p>
+                            <a class="btn slide-btn" href="#">узнать больше</a>
+                        </div> 
+                    </div>
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                
+                    <div class="slider-control">
+                        <label for="slide1">
+                            <img src="#" width="5" height="5" alt="слайд 1">
+                        </label>
+                        <label for="slide2">
+                            <img src="#" width="5" height="5" alt="слайд 2">
+                        </label>
+                        <label for="slide3">
+                            <img src="#" width="5" height="5" alt="слайд 3">
+                        </label>
+                    </div>
+                </div> <!--end wrapper slider-->
             </div>
         </header> <!--end main header-->
         
         <main class="container">
-            <div class="wrapper-slider clearfix">
-                <input type="radio" name="point" id="slide1" checked>
-                <input type="radio" name="point" id="slide2">
-                <input type="radio" name="point" id="slide3">
-                
-                <div class="slider-content">
-                    <div class="slides slide1">
-                        <b class="slide-title">Долго, дорого, скрупулёзно.</b>
-                        <p class="slide-info">
-                            Математически выверенный дизайн 
-                            для вашего сайта или мобильного приложения.
-                        </p>
-                        <a class="btn slide-btn" href="#">узнать больше</a>
-                    </div>
-                    <!--
-                    <div class="slides slide2">
-                        <b class="slide-title">Любите ли вы математику,как любим ее мы?</b>
-                        <p class="slide-info">
-                            Нашим дизайнерам мы удаляем нейроны, ответственные
-                            за креатив, чтобы дать им возможность все просчитать
-                        </p>
-                        <a class="btn slide-btn" href="#">узнать больше</a>
-                    </div>
-                    
-                    <div class="slides slide3">
-                        <b class="slide-title">Только наркотики,только хардкор!</b>
-                        <p class="slide-info">
-                            Все дизайнерские решения в нашей компании принимаются 
-                            только под воздействием качественных галлюциногенов
-                        </p>
-                        <a class="btn slide-btn" href="#">узнать больше</a>
-                    </div> -->
-                </div>
-                
-                <div class="slider-control">
-                    <label for="slide1">
-                        <img src="#" width="5" height="5" alt="слайд 1">
-                    </label>
-                    <label for="slide2">
-                        <img src="#" width="5" height="5" alt="слайд 2">
-                    </label>
-                    <label for="slide3">
-                        <img src="#" width="5" height="5" alt="слайд 3">
-                    </label>
-                </div>
-            </div> <!--end wrapper slider-->
+            
             
             <div class="content">
                 <div class="product-wrapper clearfix">
                     <div class="product-block">
                         <a href="#"><img src="img/sites.jpg" width="240" height="124" alt="Веб-сайты"></a>
-                        <b>веб-сайты</b> <!--h1-->
+                        <b>веб-сайты</b>
                         <p>
                             Мир никогда не будет прежним
                             после того как увидит ваш сайт!
                         </p>
-                        <a class="btn btn-product1" href="#">заказать</a>
+                        <a class="btn btn-product-1" href="#">заказать</a>
                     </div> 
                     
                     <div class="product-block">
@@ -94,7 +101,7 @@
                             Покорите топ-10 приложений
                             в AppStrore и Google Play
                         </p>
-                        <a class="btn btn-product2" href="#">заказать</a>
+                        <a class="btn btn-product-2" href="#">заказать</a>
                     </div>
                     
                     <div class="product-block">
@@ -104,7 +111,7 @@
                             Вы даже не подозреваете, 
                             насколько вы изумительны!
                         </p>
-                        <a class="btn btn-product3" href="#">заказать</a>
+                        <a class="btn btn-product-3" href="#">заказать</a>
                     </div>
                 </div> <!--end product wrapper-->
                 
@@ -120,7 +127,7 @@
                             Работаем не покладая рук, как роботы.
                         </p>
                         <h2>выполняем заказы на разработку:</h2>
-                        <ul>
+                        <ul class="list-red-line">
                             <li>Веб-сайтов любой сложности</li>
                             <li>Мобильных приложений для iOS и Android</li>
                             <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -129,9 +136,9 @@
                     
                     <div class="studio-info-right">
                         <a class="logo-promo" href="#"><img src="img/logo.png" width="185" height="75" alt="Нёрдс"></a>
-                        <span class="since">since 2004</span>
+                        <span class="logo-promo-title">since 2004</span>
                         <h2>как мы работаем:</h2>
-                        <ul>
+                        <ul class="list-red-line">
                             <li>С самоотдачей 146%</li>
                             <li>Соблюдая строки на 100%</li>
                             <li>По предоплате 50%</li>
@@ -154,20 +161,47 @@
                         <p>
                             191186, Санкт-Петербург, 
                             ул. Б. Конюшенная, д. 19/8
-                            тел. +7 (812) 275-75-75
+                            <span>тел. +7 (812) 275-75-75</span>
                         </p>
                         <a class="btn contact-btn" href="#">напишите нам</a>
                     </div>
-                    <!--КАРТА-->
+                    <div class="write-form">
+                            <button type="button" class="close-form-button">
+                                <div class="close-btn-icon">
+                                    <div class="close-btn-line-1">
+                                        <div class="close-btn-line-2"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <form action="#" method="post"> 
+                                <div class="input-field-wrapper login-wrapper">
+                                    <label>
+                                        Ваше имя:
+                                        <input class="input-field" type="text" name="username" id="login" value="представьтесь, пожалуйста">
+                                    </label>
+                                </div>
+                                <div class="input-field-wrapper email-wrapper">
+                                    <label>
+                                        Ваш e-mail:
+                                        <input class="input-field" type="text" name="email" id="email" value="для отправки ответа">
+                                    </label>
+                                </div>    
+                                <label>
+                                    Текст письма:
+                                    <textarea class="letter-textarea" rows="5" cols="76"  name="letter">в свободной форме</textarea>
+                                </label>
+                                <input type="submit" value="отправить" class="btn-form">
+                            </form>
+                        </div> <!--end wtite form-->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1188.3582904709765!2d30.323538052423462!3d59.93923638901068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1462063006525" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                
             </div> <!--end map-->
             <div class="container">
                 <div class="contacts">
                     <div class="social">
-                        <a href="#"><img src="#" width="60" height="60" alt="Вконтакте"></a>
-                        <a href="#"><img src="#" width="60" height="60" alt="Facebook"></a>
-                        <a href="#"><img src="#" width="60" height="60" alt="Instagram"></a>
+                        <a class="social-btn icon-vk" href="#"></a>
+                        <a class="social-btn icon-facebook" href="#"></a>
+                        <a class="social-btn icon-instagramm" href="#"></a>
                     </div>
                     <div class="footer-promo">
                         <b>Давайте дружить, это выгодно!</b>
@@ -176,24 +210,5 @@
                 </div>
             </div>
         </footer> <!--end main footer-->
-        
-        <div class="write-form">
-            <button type="button"><img src="img/close_btn.png" width="41" height="41" alt="close"></button>
-            <form action="#" method="post"> 
-                <label>
-                    Ваше имя:
-                    <input type="text" name="username" id="login" value="представьтесь, пожалуйста">
-                </label>
-                <label>
-                    Ваш e-mail:
-                    <input type="text" name="pass" id="pass" value="для отправки ответа">
-                </label>
-                <label>
-                    Текст письма:
-                    <textarea rows="4"  name="letter">в свободной форме</textarea>
-                </label>
-                <input type="submit" value="отправить">
-            </form>
-        </div> <!--end wtite form-->
     </body>
 </html>  
