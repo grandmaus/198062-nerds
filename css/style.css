@@ -557,6 +557,7 @@ a {
     top: 88px;
     left: 428px;
     color: #666666;
+    z-index: 400;
 }
 
 .map-info h2 {
@@ -642,6 +643,7 @@ a {
     font-size: 0;
     left: 545px;
     bottom: 30px;
+    z-index: 500;
     display: none;
 }
 
