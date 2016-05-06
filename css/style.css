@@ -295,7 +295,7 @@ a {
 }
 
 .slide:nth-child(1) {
-    background-image: url("/img/slide-1.png");
+    background-image: url("img/slide-1.png");
     background-repeat: no-repeat;
     background-position: 100% 10px;
 }
@@ -845,7 +845,7 @@ a {
 }
 
 .min-price{
-    margin-right: 13px;
+    margin-right: 12px;
 }
 
 
