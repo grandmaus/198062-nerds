@@ -52,17 +52,25 @@
                         до<input class="max-price" type="text" name="max-price" value="15000">
                     </div>
 
-                    <h2 class="price-choise-caption">сетка:</h2>
-                    <label><input type="radio" name="grid" value="adapt" checked>Адаптивная</label>
-                    <label><input type="radio" name="grid" value="fix">Фиксированная</label>
-                    <label><input type="radio" name="grid" value="rubber">Резиновая</label>                    
+                    <h2 class="grid-choise-caption">сетка:</h2>
+                    <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
+                    <label for="adaptive">Адаптивная</label>
+                    <input type="radio" id="fixed" name="grid" value="fixed">
+                    <label for="fixed">Фиксированная</label>
+                    <input type="radio" id="fluid" name="grid" value="fluid">
+                    <label for="fluid">Резиновая</label>                    
 
-                    <h2 class="price-choise-caption">особенности</h2>
-                    <label><input type="checkbox" name="slider" value="slider" checked>Слайдер</label>
-                    <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
-                    <label><input type="checkbox" name="news" value="news" checked>Новости</label>
-                    <label><input type="checkbox" name="gallery" value="gallery">Галлерея</label>
-                    <label><input type="checkbox" name="basket" value="basket">Корзина</label>
+                    <h2 class="features-choise-caption">особенности:</h2>
+                    <input type="checkbox" id="slider" name="slider" value="slider" checked>
+                    <label for="slider">Слайдер</label>
+                    <input type="checkbox" id="advant" name="advantage" value="advantage">
+                    <label for="advant">Блок преимуществ</label>
+                    <input type="checkbox" id="news" name="news" value="news" checked>
+                    <label for="news">Новости</label>
+                    <input type="checkbox" id="gallery" name="gallery" value="gallery">
+                    <label for="gallery">Галерея</label>
+                    <input type="checkbox" id="basket" name="basket" value="basket">
+                    <label for="basket">Корзина</label>
                     <input class="btn price-choise-btn" type="submit" value="показать">
                 </form>
             </aside> <!--end sidebar-->
@@ -76,8 +84,8 @@
                             <li><a href="#">по функционалу</a></li>
                         </ul>
                         <div class="direction-choice">
-                            <a class="triangle-choice icon-down-dir" href="#"></a>
-                            <a class="triangle-choice icon-up-dir" href="#"></a>
+                            <a><div class="sprite sprite-icon-down-dir active-down"></div></a>
+                            <a href="#"><div class="sprite sprite-icon-up-dir"></div></a>
                         </div>
                     </div> <!--end sort-->
                     
@@ -167,7 +175,7 @@
                         </article>
                     </div>
                     <ul class="pagination">
-                        <li ><a  class="active">1</a></li>
+                        <li><a class="active">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li class="pagination-next"><a href="#">следующая</a></li>
@@ -182,12 +190,12 @@
                     <p>
                         191186, Санкт-Петербург, 
                         ул. Б. Конюшенная, д. 19/8
-                        тел. +7 (812) 275-75-75
+                        <span>тел. +7 (812) 275-75-75</span>
                     </p>
                     <a class="btn contact-btn" href="#">напишите нам</a>
                 </div>
                 <div class="write-form">
-                    <button type="button">Закрыть</button>
+                    <button class="write-form-close" type="button">Закрыть</button>
                     <form action="#" method="post"> 
                         <div class="input-field-wrapper login-wrapper">
                             <label>
@@ -205,7 +213,7 @@
                             Текст письма:
                             <textarea class="letter-textarea" rows="5" cols="76"  name="letter" placeholder="в свободной форме"></textarea>
                         </label>
-                        <input type="submit" value="отправить" class="btn-form">
+                        <input class="btn-form" type="submit" value="отправить">
                     </form>
                 </div> <!--end wtite form-->
                 <div class="map-canvas"></div>
@@ -227,7 +235,7 @@
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHH9v0d1CSiqKD9BE5oKUgF8bk7UeECcU&callback=initMap"
             async defer></script>
-        <script src="js/script.js"></script>
-    
+        <script src="js/map.js"></script>
+        <script src="js/modal-show.js"></script>
     </body>
 </html>  
