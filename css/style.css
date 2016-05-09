@@ -491,8 +491,8 @@ a {
 
 .logo-promo-title {
     position: relative;
-    padding-left: 80px;
-    padding-right: 77px;  
+    padding-left: 70px;
+    padding-right: 70px;  
     text-transform: uppercase;
 }
 
@@ -501,7 +501,7 @@ a {
    position: absolute;
    left: 0;
    top: 50%;
-   width: 65px;
+   width: 60px;
    height: 2px;
    background-color: #eeeeee;
 }
@@ -511,7 +511,7 @@ a {
    position: absolute;
    right: 0;
    top: 50%;
-   width: 65px;
+   width: 60px;
    height: 2px;
    background-color: #eeeeee;
 }
