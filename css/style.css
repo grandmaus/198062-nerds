@@ -1,71 +1,10 @@
 body {
     font-size: 16px;
     line-height: 22px;
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Roboto", "Arial", sans-serif;
     color: black;
 }
-
-/*------------sprites---------------------*/
-
-.sprite {
-    background-image: url("../img/direction-choice-sprite.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.sprite-icon-up-dir {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -125px;
-}
-
-.sprite-icon-down-dir {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -65px;
-    margin-right: 5px;
-}
-
-.sprite-icon-up-dir:hover {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -105px;
-}
-
-.sprite-icon-down-dir:hover {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -45px;
-}
-
-.sprite-icon-down-dir:active {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -25px;
-}
-
-.sprite-icon-up-dir:active {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -145px;
-}
-
-.direction-choice .active-down {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -5px;
-}
-
-.direction-choice .active-up  {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -85px;
-}
-
-/*------------sprites end---------------------*/
-
 
 
 /*-----------start icon fonts------------*/
@@ -193,17 +132,16 @@ a {
     opacity: 0.3;
 }
 
-.user-block:hover a::before {
-    opacity: 1;
-}
-
-.top-menu a:hover {
+.user-block a:hover   {
     color: #fb565a;
 }
 
-.user-block a:hover {
-    color: #fb565a;
+.user-block a:hover::before {
     opacity: 1
+}
+
+.main-navigation a:hover {
+    color: #fb565a;
 }
 
 .main-navigation a:active {
@@ -216,7 +154,7 @@ a {
     opacity: 0.4;
 }
 
-.user-block:active a::before {
+.user-block a:active::before {
     opacity: 0.15;
 }
 
@@ -240,7 +178,7 @@ a {
 .slider {
     position: relative;
     width: 880px;
-    height: 310px;
+    min-height: 310px;
     margin: 0 auto;
     margin-top: 32px;
 }
@@ -280,12 +218,8 @@ a {
 }
 
 .slide {
-    position: absolute;
-    top: 0;
-    right: 1px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    min-width: 100%;
+    min-height: 319px;
 }
 
 .slide-text {
@@ -296,6 +230,7 @@ a {
 
 .slide-title {
     min-height: 75px;
+    width: 465px;
     font-size: 36px;
     line-height: 1;
     font-weight: bold;
@@ -371,8 +306,7 @@ a {
 }
 
 .service-block p {
-    margin-bottom: 34px;
-    padding-right: 5px;
+    margin-bottom: 27px;
 }
 
 .service-block:last-child {
@@ -384,7 +318,11 @@ a {
 }
 
 .btn-service {
-    padding: 12px 40px;
+    display: block;
+    padding: 9px 5px;
+    width: 130px;
+    white-space: normal;
+    text-align: center;
 }
 
 .btn-service-1 {
@@ -431,10 +369,11 @@ a {
 }
 
 .promo-block {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 50px;
     padding-top: 45px;
     border-top: 2px solid #eeeeee;
+    color: #283136;
 }
 
 .studio-info-left {
@@ -445,6 +384,7 @@ a {
 
 .studio-info-left h1 {
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .studio-info-left h2  {
@@ -490,10 +430,12 @@ a {
 }
 
 .logo-promo-title {
+    display: block;
+    width: 237px;
     position: relative;
-    padding-left: 70px;
-    padding-right: 70px;  
     text-transform: uppercase;
+    text-align: center;
+     color: #000000;
 }
 
 .logo-promo-title::before {
@@ -501,7 +443,7 @@ a {
    position: absolute;
    left: 0;
    top: 50%;
-   width: 60px;
+   width: 65px;
    height: 2px;
    background-color: #eeeeee;
 }
@@ -511,7 +453,7 @@ a {
    position: absolute;
    right: 0;
    top: 50%;
-   width: 60px;
+   width: 65px;
    height: 2px;
    background-color: #eeeeee;
 }
@@ -567,6 +509,8 @@ a {
     width: 100%;
     height: 415px;
     background-image: url("../img/map-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .map-info {
@@ -613,16 +557,23 @@ a {
 }
 
 .social {
-    width: 250px;
+    width: 300px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .social-btn {
     border-radius: 50%;
+    display: inline-block;
+    width: 62px;
+    height: 26px;
     background-color: #e1e1e1;
-    padding: 18px 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     margin-right: 27px;
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: middle;
     font-size: 23px;
     color: #ffffff;
 }
@@ -641,11 +592,15 @@ a {
     padding-top: 15px;
 }
 
+.uvisible-text {
+    display: none;
+}
+
 .footer-promo {
     width: 590px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 70px;
+    margin-left: 20px;
     font-size: 16px;
     line-height: 32px;
     text-align: left;
@@ -815,7 +770,6 @@ textarea:-moz-placeholder {
     padding-left: 12px;
     padding-top: 6px;
     font-size: 12px;
-/*    text-transform: uppercase;*/
 }
 
 
@@ -865,7 +819,7 @@ textarea:-moz-placeholder {
 
 .features-choise-caption {
     margin-bottom: 17px;
-    margin-top: 32px;
+    margin-top: 34px;
 }
 
 
@@ -952,12 +906,17 @@ textarea:-moz-placeholder {
 }
 
 .price-choise-btn {
+    display: block;
     border: none;
-    padding: 8px 46px;
-    margin-top: 43px;
+    width: 155px;
+    min-height: 38px;
+    padding: 1px 50px;
+    margin-top: 41px;
     color: #000000;
     cursor: pointer;
     background-color: #f1f1f1;
+    white-space: normal;
+    text-align: center;
 }
 
 .price-choise-btn:hover {
@@ -1079,11 +1038,10 @@ input[type="radio"]:disabled + label::before{
     margin-bottom: 7px;
 }
 
-.sort-fiter {
+.sort-filter {
     display: inline-block;
-    width: 435px;
+    width: 520px;
     padding-left: 0;
-    white-space: nowrap;
     font-size: 12px;
     vertical-align: middle;
 }
@@ -1092,18 +1050,19 @@ input[type="radio"]:disabled + label::before{
     display: inline;
     margin-right: 40px;
     list-style-type: none;
+    white-space: nowrap;
 }
 
 .sort-title ~ li {
     border-bottom: 1px dotted #00ca74;
 }
 
-.sort-fiter a {
+.sort-filter a {
     color: #000000;
     opacity: 0.3;
 }
 
-.sort-fiter a:hover {
+.sort-filter a:hover {
     opacity: 1;
 }
 
@@ -1115,11 +1074,13 @@ input[type="radio"]:disabled + label::before{
     opacity: 1;
 }
 
-.sort-fiter li:active {
+.sort-title ~ li:active {
     border: none;
 }
 
-.sort-filter .active {
+.sort-filter .active, 
+.sort-filter .active:hover, 
+.sort-filter .active:active {
     opacity: 1;
     border: none;
 }
@@ -1128,8 +1089,55 @@ input[type="radio"]:disabled + label::before{
     display: inline-block;
     font-size: 0;
     vertical-align: middle;
-    margin-left: 95px;
+    margin-left: 10px;
 }
+
+/*------------sprites---------------------*/
+
+.direction-choice a::before {
+    content: "";
+    background-image: url("../img/direction-choice-sprite.png");
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.icon-down-dir::before {
+    background-position: -5px -65px;
+    margin-right: 5px;
+}
+
+.icon-up-dir::before {
+    background-position: -5px -125px;
+}
+
+.icon-up-dir:hover::before {
+    background-position: -5px -105px;
+}
+
+.icon-down-dir:hover::before {
+    background-position: -5px -45px;
+}
+
+.icon-down-dir:active::before {
+    background-position: -5px -25px;
+}
+
+.icon-up-dir:active::before {
+    background-position: -5px -145px;
+}
+
+.direction-choice .active-down::before {
+    background-position: -5px -5px;
+}
+
+.direction-choice .active-up::before  {
+    background-position: -5px -85px;
+}
+
+/*------------sprites end---------------------*/
 
 .catalog-wrapper {
     width: 560px;
@@ -1187,8 +1195,6 @@ input[type="radio"]:disabled + label::before{
 .product:hover  .product-price {
     display:block;
 }
-
-
 
 .product-price {
     width: 160px;
@@ -1269,17 +1275,19 @@ input[type="radio"]:disabled + label::before{
     padding-right: 30px;
 }
 
-.pagination a[href]:hover {
+.pagination a:hover {
     background: #e5e5e5;
 }
 
-.pagination a[href]:active {
+.pagination a:active {
     background: #e5e5e5;
     border-top: 3px solid #d5d5d5;
     padding-top: 5px;
 }
 
-.pagination .active {
+.pagination .active, 
+.pagination .active:hover, 
+.pagination .active:active {
     background: #ffffff;
     border: 2px solid #f1f1f1;
     padding: 6px 14px;

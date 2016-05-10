@@ -77,15 +77,15 @@
             
                 <div class="catalog-wrapper">
                     <div class="sort">
-                        <ul class="sort-fiter">
+                        <ul class="sort-filter">
                             <li class="sort-title">сортировать:</li>
                             <li><a href="#">по цене</a></li>
-                            <li><a href="#">по типу</a></li>
+                            <li class="active"><a class="active">по типу</a></li>
                             <li><a href="#">по функционалу</a></li>
                         </ul>
                         <div class="direction-choice">
-                            <a><div class="sprite sprite-icon-down-dir active-down"></div></a>
-                            <a href="#"><div class="sprite sprite-icon-up-dir"></div></a>
+                            <a class="icon-down-dir active-down">по убыванию</a>
+                            <a class="icon-up-dir" href="#">по возрастанию</a>
                         </div>
                     </div> <!--end sort-->
                     
@@ -213,17 +213,19 @@
                             Текст письма:
                             <textarea class="letter-textarea" rows="5" cols="76"  name="letter" placeholder="в свободной форме"></textarea>
                         </label>
+                        <label>
                         <input class="btn-form" type="submit" value="отправить">
+                        </label>
                     </form>
                 </div> <!--end wtite form-->
                 <div class="map-canvas"></div>
             </div> <!--end map-->
             <div class="container">
-                <div class="contacts ">
+                <div class="contacts">
                     <div class="social">
-                        <a class="social-btn icon-vk" href="#"></a>
-                        <a class="social-btn icon-facebook" href="#"></a>
-                        <a class="social-btn icon-instagramm" href="#"></a>
+                        <a class="social-btn icon-vk" href="#" title="Вконтакте"><span class="uvisible-text">Вконтакте</span></a>
+                        <a class="social-btn icon-facebook" href="#" title="Facebook"><span class="uvisible-text">Facebook</span></a>
+                        <a class="social-btn icon-instagramm" href="#" title="Instagramm"><span class="uvisible-text">Instagramm</span></a>
                     </div>
                     <div class="footer-promo">
                         <b>Давайте дружить, это выгодно!</b>
@@ -235,7 +237,6 @@
         
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHH9v0d1CSiqKD9BE5oKUgF8bk7UeECcU&callback=initMap"
             async defer></script>
-        <script src="js/map.js"></script>
-        <script src="js/modal-show.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>  
