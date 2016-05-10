@@ -114,7 +114,6 @@ a {
     width: 90px;
     float: right;
     margin-top: 32px;
-    margin-right: 2px;
     font-size: 14px;
 }
 
@@ -128,7 +127,7 @@ a {
     text-decoration: inherit;
     font-style: normal;
     font-variant: normal;
-    margin-right: 5px;
+    margin-right: 10px;
     opacity: 0.3;
 }
 
@@ -192,7 +191,7 @@ a {
     position: absolute;
     bottom: 95px;
     left: 50%;
-    width: 200px;
+    width: 180px;
     height: 10px;
     margin-left: -100px;
     text-align: center;
@@ -219,7 +218,7 @@ a {
 
 .slide {
     min-width: 100%;
-    min-height: 319px;
+    min-height: 310px;
 }
 
 .slide-text {
@@ -239,16 +238,26 @@ a {
 
 .slide-text p {
     width: 465px;
+    margin-bottom: 25px;
 }
 
 .slide-btn {
     display: block;
-    width: 240px;
-    padding: 8px 0;
-    margin-top: 25px;
+    width: 200px;
+    height: 22px;
+    padding: 9px 20px;
     text-align: center;
-    text-decoration: none;
     background: #fb565a;
+}
+
+.slide-btn:hover {
+    background-color: #d6494d;
+}
+
+.slide-btn:active {
+    background-color: #b63538;
+    padding-top: 6px;
+    border-top: 3px solid #9b2d30;
 }
 
 .slide:nth-child(1) {
@@ -266,7 +275,7 @@ a {
 .slide:nth-child(3) {
     background-image: url("../img/slide-3.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% -9px;
 }
 
 .slide {
@@ -350,7 +359,7 @@ a {
 }
 
 .btn-service:active {
-    padding-top: 9px;
+    padding-top: 6px;
 }
 
 .btn-service-1:active {
@@ -541,11 +550,18 @@ a {
 .contact-btn {
     display: block;
     width: 186px;
+    height: 22px;
     background-color: #fb565a;
     padding: 8px 10px;
     margin: 0 auto;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.contact-btn:active {
+    padding-top: 5px;
+    background-color: #b63538;
+    border-top: 3px solid #9b2d30;
 }
 
 .contacts {
@@ -739,6 +755,16 @@ textarea:-moz-placeholder {
     cursor: pointer;
 }
 
+.btn-form:hover {
+    background-color: #d6494d;
+}
+
+.btn-form:active {
+    background-color: #b63538;
+    padding-top: 5px;
+    border-top: 3px solid #9b2d30;
+}
+
 .input-field-wrapper {
     width: 220px;
     display: inline-block;
@@ -894,7 +920,6 @@ textarea:-moz-placeholder {
     margin-right: 12px;
 }
 
-
 .sidebar label {
     display: block; 
     line-height: 40px;
@@ -909,8 +934,7 @@ textarea:-moz-placeholder {
     display: block;
     border: none;
     width: 155px;
-    min-height: 38px;
-    padding: 1px 50px;
+    padding: 8px 50px;
     margin-top: 41px;
     color: #000000;
     cursor: pointer;

@@ -55,7 +55,6 @@
 })();
 
 //--------interactive map
-(function () {
     var map;
     var mapCenter = {lat: 59.93913, lng: 30.31994};
 
@@ -73,4 +72,3 @@
         icon: image
       });
     }
-})();
